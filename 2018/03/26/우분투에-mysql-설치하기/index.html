@@ -9,19 +9,19 @@
     
         <meta name="keywords" content="공부,서버,우분투,mysql,우분투에 mysql 설치" />
     
-    <meta name="description" content="1$ sudo apt-get install mysql-server y 를 누르고 기다리다 보면 아래와 같은 창이 뜬다 root 의 비밀번호를 입력하고 다시 한번더 입력해 준다 기다리다 보면 설치가 끝난닷  사진은 없지만12$ cd /etc/mysql/mysql.conf.d/$ sudo nano mysqld.cnf 를 입력해준다 그러면 아래와 같은 화면으로">
+    <meta name="description" content="알림본 글은 아무것도 모르는 백수가 나 혼자 보려고 작성해 놓은겁니다. 따라하다 안되시면 저도 몰라요 우분투 서버에 접속후1$ sudo apt-get install mysql-server y 를 누르고 기다리다 보면 아래와 같은 창이 뜬다 root 의 비밀번호를 입력하고 다시 한번더 입력해 준다 기다리다 보면 설치가 끝난닷  사진은 없지만12$ cd /et">
 <meta name="keywords" content="공부,서버,우분투,mysql,우분투에 mysql 설치">
 <meta property="og:type" content="article">
 <meta property="og:title" content="우분투에  mysql 설치하기">
 <meta property="og:url" content="http://PowerplayerKR.github.io/2018/03/26/우분투에-mysql-설치하기/index.html">
 <meta property="og:site_name" content="PowerplayerKR">
-<meta property="og:description" content="1$ sudo apt-get install mysql-server y 를 누르고 기다리다 보면 아래와 같은 창이 뜬다 root 의 비밀번호를 입력하고 다시 한번더 입력해 준다 기다리다 보면 설치가 끝난닷  사진은 없지만12$ cd /etc/mysql/mysql.conf.d/$ sudo nano mysqld.cnf 를 입력해준다 그러면 아래와 같은 화면으로">
+<meta property="og:description" content="알림본 글은 아무것도 모르는 백수가 나 혼자 보려고 작성해 놓은겁니다. 따라하다 안되시면 저도 몰라요 우분투 서버에 접속후1$ sudo apt-get install mysql-server y 를 누르고 기다리다 보면 아래와 같은 창이 뜬다 root 의 비밀번호를 입력하고 다시 한번더 입력해 준다 기다리다 보면 설치가 끝난닷  사진은 없지만12$ cd /et">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="http://powerplayerkr.github.io/uploads/images/ubuntu_mysql_install/1.PNG">
-<meta property="og:updated_time" content="2018-03-27T12:25:45.592Z">
+<meta property="og:updated_time" content="2018-03-27T12:33:50.628Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="우분투에  mysql 설치하기">
-<meta name="twitter:description" content="1$ sudo apt-get install mysql-server y 를 누르고 기다리다 보면 아래와 같은 창이 뜬다 root 의 비밀번호를 입력하고 다시 한번더 입력해 준다 기다리다 보면 설치가 끝난닷  사진은 없지만12$ cd /etc/mysql/mysql.conf.d/$ sudo nano mysqld.cnf 를 입력해준다 그러면 아래와 같은 화면으로">
+<meta name="twitter:description" content="알림본 글은 아무것도 모르는 백수가 나 혼자 보려고 작성해 놓은겁니다. 따라하다 안되시면 저도 몰라요 우분투 서버에 접속후1$ sudo apt-get install mysql-server y 를 누르고 기다리다 보면 아래와 같은 창이 뜬다 root 의 비밀번호를 입력하고 다시 한번더 입력해 준다 기다리다 보면 설치가 끝난닷  사진은 없지만12$ cd /et">
 <meta name="twitter:image" content="http://powerplayerkr.github.io/uploads/images/ubuntu_mysql_install/1.PNG">
     
 
@@ -171,7 +171,8 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install mysql-server</span><br></pre></td></tr></table></figure>
+            <h1 id="알림"><a href="#알림" class="headerlink" title="알림"></a>알림</h1><p><strong><em>본 글은 아무것도 모르는 백수가 나 혼자 보려고 작성해 놓은겁니다. 따라하다 안되시면 저도 몰라요</em></strong></p>
+<p>우분투 서버에 접속후<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install mysql-server</span><br></pre></td></tr></table></figure></p>
 <p>y 를 누르고 기다리다 보면 아래와 같은 창이 뜬다<br><img src="/uploads/images/ubuntu_mysql_install/1.PNG" alt="sudo apt-get install mysql-server"></p>
 <p>root 의 비밀번호를 입력하고<br><img src="/uploads/images/ubuntu_mysql_install/2.PNG" alt="비밀번호 입력햇!"></p>
 <p>다시 한번더 입력해 준다 기다리다 보면 설치가 끝난닷<br><img src="/uploads/images/ubuntu_mysql_install/3.PNG" alt="한번더 입력했!"></p>
@@ -183,7 +184,7 @@
 <p>를 입력<br><img src="/uploads/images/ubuntu_mysql_install/8.PNG" alt="GRANT ALL PRIVILEGES ON *.* to &#39;%&#39; IDENTIFIED BY &#39;root의 비밀번호&#39;;"><br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">user</span>, host <span class="keyword">from</span> mysql.user;</span><br></pre></td></tr></table></figure></p>
 <p>를 입력<br><img src="/uploads/images/ubuntu_mysql_install/9.PNG" alt="select user, host from mysql.user;"><br>user와 host 에 % 가 있다면 성공<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">flush</span> <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure></p>
 <p>를 입력후<br><img src="/uploads/images/ubuntu_mysql_install/10.PNG" alt="flush privileges;"><br>mysql 을 빠져 나온뒤<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo /etc/init.d/mysql restart</span><br></pre></td></tr></table></figure></p>
-<p>mysql 서버 다시시작<br><img src="/uploads/images/ubuntu_mysql_install/11.PNG" alt="sudo /etc/init.d/mysql restart"><br>ok 라고 뜨면 workbench로 가서 서버 아이피와 포트를 적고 접속해보자<br><img src="/uploads/images/ubuntu_mysql_install/12.PNG" alt="mysql 다시시작"></p>
+<p>mysql 서버 다시시작<br><img src="/uploads/images/ubuntu_mysql_install/11.PNG" alt="sudo /etc/init.d/mysql restart"><br>ok 라고 뜨면 workbench로 가서 서버 아이피와 포트를 적고 접속해보자<br><img src="/uploads/images/ubuntu_mysql_install/12.PNG" alt="끝"></p>
 
         </div>
         <footer class="article-footer">
@@ -191,7 +192,7 @@
 
 
 
-    <a data-url="http://PowerplayerKR.github.io/2018/03/26/우분투에-mysql-설치하기/" data-id="cjf87ku0r0001vk5jfmb7z7oy" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://PowerplayerKR.github.io/2018/03/26/우분투에-mysql-설치하기/" data-id="cjf9n67xq000gg05jwng1t7d9" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
